@@ -1,9 +1,8 @@
 import axios from "axios"
 const headers = {
     "Content-Type": "application/json",
-    "x-api-key": "d28a5ab0219f11e9a96003ad393e52c4"
+    "x-api-key": "c27fbe803bb211e9b9cc57122c11a69f"
 }
-
 
 
 const VerifyStatus = async (status) => {
