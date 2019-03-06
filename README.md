@@ -33,7 +33,7 @@ Using cdn:
 Request to retrieve transactions
 
 ```js
-kkiapay.transaction({ transactionId:"xxxxxx",apikey:"xxxxxxx"}).
+kkiapay.transaction({ transactionId:"xxxxxx",privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"}).
 then((response) => {
     //handle response
 }).
