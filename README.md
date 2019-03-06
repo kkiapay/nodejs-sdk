@@ -11,7 +11,7 @@ Using npm:
 
 ```bash
 
-$ npm i -s kkiapay-transaction
+$ npm i -s kkiapay
 
 ```
 
