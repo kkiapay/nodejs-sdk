@@ -1,7 +1,5 @@
 # KKIAPAY-TRANSACTION
 
-Javascript Sdk for KKIAPAY (https://kkiapay.me) API
-
  
 ## Installing
 
@@ -13,7 +11,7 @@ Using npm:
 
 ```bash
 
-$ npm i -s kkiapay-transaction
+$ npm i -s kkiapay
 
 ```
 
@@ -27,4 +25,19 @@ Using cdn:
 
 <script  src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
 
+```
+
+
+## Example
+
+Request to retrieve transactions
+
+```js
+kkiapay.transaction({ transactionId:"xxxxxx",apikey:"xxxxxxx"}).
+then((response) => {
+    //handle response
+}).
+catch((error) => {
+    //handle error
+})
 ```
