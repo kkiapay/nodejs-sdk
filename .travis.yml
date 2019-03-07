@@ -1,6 +1,6 @@
 language: nodejs
 node_js:
-  - "iojs"
+  - "node"
   - "7"
 
 before_script:
