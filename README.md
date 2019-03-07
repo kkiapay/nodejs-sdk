@@ -1,4 +1,4 @@
-# KKIAPAY-TRANSACTION
+# KKIAPAY NODEJS-SDK
 
  
 ## Installing
@@ -11,7 +11,7 @@ Using npm:
 
 ```bash
 
-$ npm i -s kkiapay
+$ npm i -s kkiapay/nodejs-sdk
 
 ```
 
