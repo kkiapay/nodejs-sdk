@@ -1,12 +1,13 @@
 {
-  "name": "kkiapay-verify",
+  "name": "nodejs-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node sample",
     "smart": "babel-node app.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "test": "jest ./tests"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@babel/core": "^7.3.4",
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "loadash": "^1.0.0",
     "terser-webpack-plugin": "^1.2.3",
