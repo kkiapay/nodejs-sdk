@@ -5,7 +5,6 @@ const http = require('../../lib/http');
 let sucess = true
 
 http.interceptors.request.use((config) => {
-    config.baseURL = 'http://test.test';
     return  null;
 },() => {
 
