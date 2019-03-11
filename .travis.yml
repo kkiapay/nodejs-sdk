@@ -1,6 +1,11 @@
 language: nodejs
+sudo: false
 node_js:
-  - "7"
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
 
 before_script:
   - npm install
