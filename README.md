@@ -35,7 +35,7 @@ Request to retrieve transactions
 ```js
 // setup your api key (find one at https://www.kkiapay.me)
 const k = kkiapay("<object-contain-api-key>")
-k.verify({ transactionId:"xxxxxx",privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"}).
+k.verify({ privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"}).
 then((response) => {
     //handle response
 }).
