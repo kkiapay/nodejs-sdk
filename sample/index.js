@@ -1,9 +1,9 @@
 const kkiapay=require("../lib")
 
 
-let k=kkiapay({ publickey:"42051160403a11e98f723752f967fed2",privatekey:"hjk",secretkey:"gvhjb"})
+let k=kkiapay({ publickey:"process.env.publickey",privatekey:"process.env.privatekey",secretkey:"process.env.secretkey"})
 
-k.verify("JkgWE6DO2C").
+k.verify("xxxxxx").
 then(e=>console.log(e)).
 catch(err=>console.log(err))
 
