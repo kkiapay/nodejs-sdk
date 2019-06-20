@@ -17,18 +17,6 @@ $ npm i -s kkiapay/nodejs-sdk
 
 ```
 
-  
-
-Using cdn:
-
-  
-
-```html
-
-<script  src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
-
-```
-
 
 ## Request to retrieve transactions 
 
