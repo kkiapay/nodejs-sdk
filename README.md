@@ -35,8 +35,8 @@ Using cdn:
 //initialize kkiapay in production environnment
 const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
 //initialize kkiapay in sandbox environnment
-// Request to retrieve transactions
 const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
+// Request to retrieve transactions
 k.verify("transactionId").
 then((response) => {
     //handle response
