@@ -34,19 +34,10 @@ Request to retrieve transactions in production
 
 ```js
 // setup your api key (https://www.kkiapay.me)
+//initialize kkiapay in production environnment
 const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
-k.verify("transactionId").
-then((response) => {
-    //handle response
-}).
-catch((error) => {
-    //handle error
-})
-```
+//initialize kkiapay in sandbox environnment
 
-Request to retrieve transactions in sandbox
-
-```js
 const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
 k.verify("transactionId").
 then((response) => {
