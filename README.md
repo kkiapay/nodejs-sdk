@@ -1,4 +1,6 @@
 # KKIAPAY NODEJS-SDK
+https://travis-ci.org/kkiapay/nodejs-sdk.svg?branch=master
+
 
  
 ## Installing

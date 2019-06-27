@@ -13,7 +13,7 @@ function omit (key) {
 }
 
 describe('Validation of transaction parameters',() => {
-    it('must throw exception not object paremeter',() => {
+    it('must throw exception : not object paremeter',() => {
 
         expect(() => validateOptions(null)).toThrow();
         expect(() => validateOptions('')).toThrow();
