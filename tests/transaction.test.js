@@ -1,5 +1,11 @@
 require ("babel-polyfill");
-const transaction = require('../lib/transaction');
+const options = {
+    privatekey:"12345",
+    publickey:"1234",
+    secretkey:"1234",
+    transactionId:"123456"
+};
+const transaction = require('../lib/transaction')(options).verify;
 
 const changeStatus = require('./__Mock__/http')
 
@@ -9,6 +15,7 @@ describe("transaction verify test",() => {
         changeStatus(true);
         transaction({ transactionId:"RUYnpqsSQ1",privatekey:process.env.privatekey,publickey:process.env.publickey,secretkey:process.env.secretkey})
         .then((data) => {
+            console.log(data)
             expect(data).toMatchObject({})
             done()
         })

@@ -1,4 +1,5 @@
 var path = require('path');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var TerserPlugin=require("terser-webpack-plugin")
 
 module.exports = {

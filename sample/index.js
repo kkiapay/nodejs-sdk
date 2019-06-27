@@ -1,6 +1,10 @@
-require('dotenv').config()
-const kkiapay=require("../index")
+const kkiapay=require("../lib")
 
-kkiapay.transaction({ transactionId:"OQ00Lm-zg",privatekey:process.env.privatekey,publickey:process.env.publickey,secretkey:process.env.secretkey}).
-then(response => console.log(response)).
-catch(err => console.log(err))
+let k=kkiapay({publickey:"e4e6e19080ab11e99cf7e73f32bcec42",privatekey:"tpk_e4e708a080ab11e99cf7e73f32bcec42",secretkey:"tsk_e4e708a180ab11e99cf7e73f32bcec42"})
+
+k.payout_configuration("roof", true, "MOBILE_MONEY","1000","22967724710","1m").
+then(e=>console.log(e)).
+catch(err=>console.log(err))
+
+
+
