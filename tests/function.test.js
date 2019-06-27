@@ -37,11 +37,6 @@ describe('Validation of transaction parameters',() => {
         ).toThrow();
     });
 
-    it('must trow exception when transactionId is not specify', () => {
-        expect(() => 
-        validateOptions(omit('transactionId'))
-        ).toThrow();
-    });
 
     it('must trow exception when transactionId is not specify', () => {
         expect(validateOptions(omit(''))).toMatchObject(options)

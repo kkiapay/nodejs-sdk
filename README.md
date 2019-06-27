@@ -30,12 +30,25 @@ Using cdn:
 
 ## Example
 
-Request to retrieve transactions
+Request to retrieve transactions in production
 
 ```js
 // setup your api key (https://www.kkiapay.me)
-const k = kkiapay("<object-contain-api-key>")
-k.verify({ privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"}).
+const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
+k.verify("transactionId").
+then((response) => {
+    //handle response
+}).
+catch((error) => {
+    //handle error
+})
+```
+
+Request to retrieve transactions in sandbox
+
+```js
+const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
+k.verify("transactionId").
 then((response) => {
     //handle response
 }).
