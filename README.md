@@ -4,9 +4,24 @@
 
   
 
-Using cdn:
-```html
-    <script  src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
+Using npm:
+```bash
+    $ npm i -s kkiapay/nodejs-sdk
+```
+
+## Initialization
+
+#### Production
+```js
+// setup your api key (https://www.kkiapay.me)
+//initialize kkiapay in production environnment
+const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
+```
+
+#### Sandbox
+```js
+//initialize kkiapay in sandbox environnment
+const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
 ```
 
   
@@ -15,11 +30,6 @@ Using cdn:
 
 #### EXAMPLE
 ```js
-// setup your api key (https://www.kkiapay.me)
-//initialize kkiapay in production environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
-//initialize kkiapay in sandbox environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
 // Request to retrieve transactions
 k.verify("transactionId").
 then((response) => {
@@ -35,11 +45,6 @@ catch((error) => {
 #### EXAMPLE
 
 ```js
-// setup your api key (https://www.kkiapay.me)
-//initialize kkiapay in production environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
-//initialize kkiapay in sandbox environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
 // Request to retrieve transactions
 k.refund("transactionId").
 then((response) => {
@@ -55,12 +60,6 @@ catch((error) => {
 #### EXAMPLE
 
 ```js
-// setup your api key (https://www.kkiapay.me)
-//initialize kkiapay in production environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx"})
-//initialize kkiapay in sandbox environnment
-const k = kkiapay({privatekey:"xxxxxxx",publickey:"xxxxxxx",secretkey:"xxxxxxx",sandbox:true})
-
 // Example to schedule payout when amount reaches a ceiling
 k.setup_payout({algorithm : "roof", send_notification : true, destination_type : "MOBILE_MONEY", roof_amount : "1000", destination : "22997000000" }).
 then((response) => {
@@ -101,3 +100,4 @@ catch((error) => {
 | TRANSACTION_NOT_FOUND |  Transaction not found |
 | INVALID_TRANSACTION | You are not owner of this transaction  |
 | INVALID_TRANSACTION_TYPE | We can't revert this transaction  |
+| INVALID_PAYOUT_DESTINATION_ACCOUNT | Provided destination account is not valid mobile money account |
