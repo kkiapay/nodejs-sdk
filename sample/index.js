@@ -1,10 +1,18 @@
 const kkiapay=require("../lib")
 
-let k=kkiapay({publickey:"e4e6e19080ab11e99cf7e73f32bcec42",privatekey:"tpk_e4e708a080ab11e99cf7e73f32bcec42",secretkey:"tsk_e4e708a180ab11e99cf7e73f32bcec42"})
+let k=kkiapay({publickey:"xxxxxxxxxxx",privatekey:"xxxxxxxxx",secretkey:"xxxxxxxxxx",sandbox:true})
 
-k.payout_configuration("roof", true, "MOBILE_MONEY","1000","22967724710","1m").
+k.verify("dkdfk").
 then(e=>console.log(e)).
 catch(err=>console.log(err))
+
+/*k.setup_payout({algorithm : "rate", send_notification : true, destination_type : "MOBILE_MONEY", rate_frequency : "1m", destination : "22997000000" }).
+then(e=>console.log(e)).
+catch(err=>console.log(err))*/
+
+/*k.setup_payout({algorithm : "roof", send_notification : true, destination_type : "MOBILE_MONEY", roof_amount : "1000", destination : "22997000000" }).
+then(e=>console.log(e)).
+catch(err=>console.log(err))*/
 
 
 
