@@ -1,24 +1,12 @@
-# KKIAPAY PHP-SDK
+# KKIAPAY NODEJS-SDK
 
-## Raw Files
-
-```bash
-    git clone https://github.com/kkiapay/php-sdk.git
-```
-
-
- 
 ## Installing
 
   
 
-Using composer:
-  
-
-```bash
-
-    composer require kkiapay/kkiapay-php
-
+Using cdn:
+```html
+    <script  src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
 ```
 
   
