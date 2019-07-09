@@ -13,7 +13,7 @@ function omit (key) {
 }
 
 describe('Validation of transaction parameters',() => {
-    it('must throw exception : not object paremeter',() => {
+    it('must throw exception not object paremeter',() => {
 
         expect(() => validateOptions(null)).toThrow();
         expect(() => validateOptions('')).toThrow();
@@ -37,11 +37,6 @@ describe('Validation of transaction parameters',() => {
         ).toThrow();
     });
 
-    it('must trow exception when transactionId is not specify', () => {
-        expect(() => 
-        validateOptions(omit('transactionId'))
-        ).toThrow();
-    });
 
     it('must trow exception when transactionId is not specify', () => {
         expect(validateOptions(omit(''))).toMatchObject(options)
