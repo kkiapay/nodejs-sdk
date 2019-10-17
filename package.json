@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-sdk",
+  "name": "kkiapay-admin-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
