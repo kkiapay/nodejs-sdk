@@ -19,7 +19,7 @@ deploy:
 
   - provider: npm
     skip_cleanup: true
-    email: ["fiacre.ayedoun@opensi.co","boussari.latif@opensi.co"]
+    email: ["nafiouali@gmail.com"]
     api_key: $NPM_TOKEN
     on:
       tags: true
