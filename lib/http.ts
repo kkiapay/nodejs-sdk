@@ -3,7 +3,7 @@ import { ApiOptions } from './typings';
 import axios from 'axios';
 
 export const api = (options: ApiOptions) => {
-  axios.create({
+  return axios.create({
     baseURL: options.sandbox ? kkiapayApis.sandbox : kkiapayApis.live,
     headers: {
       'x-api-key': options.publickey,
@@ -11,5 +11,4 @@ export const api = (options: ApiOptions) => {
       'x-private-key': options.privatekey,
     },
   });
-  return axios;
 };
