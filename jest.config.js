@@ -1,7 +1,5 @@
-
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-    verbose: true,
-    moduleDirectories: [
-        "node_modules"
-    ]
-  };
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
