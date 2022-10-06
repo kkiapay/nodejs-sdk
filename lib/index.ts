@@ -5,7 +5,8 @@ import { ApiOptions } from './typings';
 
 const verify = async (http: AxiosInstance, transactionId: string) => {
   try {
-    return (await http.post(opts.transactionEndpoint, { transactionId })).data;
+    const res = await http.post(opts.transactionEndpoint, { transactionId });
+    return res.data;
   } catch (error: any) {
     if (error.response.status === 4003) {
       throw new Error(error.response.data.reason);
