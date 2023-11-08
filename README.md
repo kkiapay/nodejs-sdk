@@ -5,11 +5,19 @@
   
 
 Using npm:
+
 ```bash
     $ npm i -s kkiapay/nodejs-sdk
 ```
 
 ## Initialization
+
+you need to import the package before using it in your controllers.
+
+```js
+// import kkiapay package
+const kkiapay = require('kkiapay-nodejs-sdk');
+```
 
 #### Production
 ```js
