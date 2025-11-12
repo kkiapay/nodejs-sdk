@@ -14,18 +14,18 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.3.4",
-    "axios": "^0.21.2",
+    "axios": "^1.13.2",
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^0.0.0",
     "dotenv": "^8.0.0",
     "loadash": "^1.0.0",
-    "terser-webpack-plugin": "^1.2.3",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.3.4",
-    "uglifyjs-webpack-plugin": "^2.1.2"
+    "uglifyjs-webpack-plugin": "^1.1.2"
   }
 }
